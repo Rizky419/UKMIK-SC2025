@@ -37,9 +37,9 @@ Pengumpulan tugas dilakukan dengan **menambahkan link repository GitHub Anda** k
 3. Tambahkan informasi Anda ke file `README.md` di folder pertemuan dengan format:
 
 ```markdown
-| Nama         | NIM    | Repository                                               |
-| ------------ | ------ | -------------------------------------------------------- |
-| Nama Lengkap | 123456 | [Link Repository](https://github.com/username/repo-name) |
+| Nama         | NIM       | Repository                                               |
+| ------------ | --------- | -------------------------------------------------------- |
+| Nama Lengkap | 2554100XX | [Link Repository](https://github.com/username/repo-name) |
 ```
 
 ### Contoh:
@@ -47,7 +47,7 @@ Pengumpulan tugas dilakukan dengan **menambahkan link repository GitHub Anda** k
 Jika Anda mengikuti **Backend** pertemuan 1, edit file `BACKEND/PERTEMUAN-1/README.md` dan tambahkan baris baru:
 
 ```markdown
-| John Doe | 123456 | [backend-pertemuan-1](https://github.com/johndoe/backend-pertemuan-1) |
+| Sugeng | 2554100XX | [backend-pertemuan-1](https://github.com/sugeng/backend-pertemuan-1) |
 ```
 
 ## 🚀 Langkah-Langkah Pengumpulan Tugas
@@ -165,13 +165,6 @@ Untuk tugas berikutnya, ulangi dari **Langkah A**.
 - 📌 Push ke repository tugas Anda sesering mungkin untuk backup
 - 📌 Submit link repository sebelum deadline
 - 📌 Selalu `git pull origin main` sebelum submit link tugas baru
-
-## 📞 Kontak
-
-Jika ada pertanyaan atau kendala, silakan hubungi:
-
-- **Instagram**: [@ukmik](https://www.instagram.com/ukmik/)
-- **Email**: ukmik@utdi.ac.id
 
 ## 📜 Lisensi
 

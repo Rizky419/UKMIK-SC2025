@@ -28,206 +28,143 @@ Materi dan tugas terkait keamanan siber, ethical hacking, dan praktik keamanan i
 
 ## 📝 Cara Pengumpulan Tugas
 
-1. **Pilih folder topik yang sesuai**
+Pengumpulan tugas dilakukan dengan **menambahkan link repository GitHub Anda** ke file `README.md` di folder pertemuan yang sesuai.
 
-   - Frontend → `FRONTEND/`
-   - Backend → `BACKEND/`
-   - Game Development → `GAME-DEV/`
-   - Cybersecurity → `CYBERSECURITY/`
+### Format Pengumpulan:
 
-2. **Masuk ke folder pertemuan yang sesuai**
+1. Buat repository **public** di GitHub untuk tugas Anda
+2. Kerjakan tugas di repository tersebut
+3. Tambahkan informasi Anda ke file `README.md` di folder pertemuan dengan format:
 
-   - Contoh: `FRONTEND/PERTEMUAN-1/`
-
-3. **Buat folder dengan nama Anda**
-
-   - Format: `NAMA-ANDA/` atau `NIM-NAMA/`
-
-4. **Upload tugas Anda ke dalam folder tersebut**
-   - Pastikan file terorganisir dengan baik
-   - Sertakan README jika diperlukan
-
-### Contoh Struktur Pengumpulan:
-
+```markdown
+| Nama         | NIM    | Repository                                               |
+| ------------ | ------ | -------------------------------------------------------- |
+| Nama Lengkap | 123456 | [Link Repository](https://github.com/username/repo-name) |
 ```
-FRONTEND/
-└── PERTEMUAN-1/
-    └── 123456-JOHN-DOE/
-        ├── index.html
-        ├── style.css
-        └── README.md
+
+### Contoh:
+
+Jika Anda mengikuti **Backend** pertemuan 1, edit file `BACKEND/PERTEMUAN-1/README.md` dan tambahkan baris baru:
+
+```markdown
+| John Doe | 123456 | [backend-pertemuan-1](https://github.com/johndoe/backend-pertemuan-1) |
 ```
 
 ## 🚀 Langkah-Langkah Pengumpulan Tugas
 
-### A. Setup Awal (Hanya Sekali)
+### A. Persiapan Repository Tugas Anda
 
-1. **Clone repository** ini ke komputer Anda
+1. **Buat repository baru** di GitHub untuk tugas Anda
+
+   - Buka [github.com/new](https://github.com/new)
+   - Nama repository: `[topik]-pertemuan-[N]`
+   - Contoh: `backend-pertemuan-1`, `frontend-pertemuan-2`
+   - Set visibility: **Public** ✅
+   - Centang "Add a README file"
+   - Klik "Create repository"
+
+2. **Clone repository tugas Anda** ke komputer
+
+   ```bash
+   git clone https://github.com/USERNAME-ANDA/nama-repo-tugas.git
+   cd nama-repo-tugas
+   ```
+
+3. **Kerjakan tugas Anda** di repository tersebut
+   - Buat struktur folder yang rapi
+   - Tambahkan README.md yang menjelaskan cara menjalankan project
+   - Commit dan push secara berkala
+
+### B. Submit Link Repository Anda
+
+1. **Clone repository Study Club** (jika belum)
 
    ```bash
    git clone https://github.com/UKM-IK/UKMIK-SC2025.git
-   ```
-
-2. **Masuk ke folder repository**
-
-   ```bash
    cd UKMIK-SC2025
    ```
 
-3. **Konfigurasi Git** (jika belum)
-   ```bash
-   git config user.name "Nama Anda"
-   git config user.email "email@anda.com"
-   ```
-
-### B. Mengumpulkan Tugas (Setiap Tugas)
-
-1. **Update repository** ke versi terbaru
+2. **Update ke versi terbaru**
 
    ```bash
    git checkout main
    git pull origin main
    ```
 
-2. **Buat branch baru** untuk tugas Anda
+3. **Buat branch baru**
 
    ```bash
-   git checkout -b tugas/topik-pertemuan-nama
+   git checkout -b submit/topik-pertemuan-nama
    ```
 
-   📝 **Contoh**: `git checkout -b tugas/frontend-1-johndoe`
+   📝 **Contoh**: `git checkout -b submit/backend-1-johndoe`
 
-3. **Buat folder tugas** Anda di lokasi yang sesuai
+4. **Edit file README.md** di folder pertemuan yang sesuai
 
-   ```
-   TOPIK/PERTEMUAN-N/NIM-NAMA/
-   ```
+   - Buka file: `TOPIK/PERTEMUAN-N/README.md`
+   - Contoh: `BACKEND/PERTEMUAN-1/README.md`
+   - Tambahkan baris baru ke tabel dengan format:
+     ```markdown
+     | Nama Lengkap | NIM | [repo-name](link-repository) |
+     ```
 
-   📝 **Contoh**: `FRONTEND/PERTEMUAN-1/123456-JOHN-DOE/`
-
-4. **Tambahkan file tugas** Anda ke dalam folder tersebut
-
-   - Kerjakan tugas Anda
-   - Pastikan file terorganisir dengan baik
-
-5. **Cek status file**
-
-   ```bash
-   git status
-   ```
-
-6. **Add file** yang akan di-commit
+5. **Commit perubahan**
 
    ```bash
    git add .
+   git commit -m "Submit tugas [TOPIK] pertemuan [N] - [NAMA]"
    ```
 
-   Atau spesifik: `git add FRONTEND/PERTEMUAN-1/123456-JOHN-DOE/`
+   📝 **Contoh**: `git commit -m "Submit tugas Backend pertemuan 1 - John Doe"`
 
-7. **Commit perubahan** dengan pesan yang jelas
+6. **Push branch**
 
    ```bash
-   git commit -m "Tambah tugas [TOPIK] pertemuan [N] - [NAMA]"
+   git push origin submit/topik-pertemuan-nama
    ```
 
-   📝 **Contoh**: `git commit -m "Tambah tugas Frontend pertemuan 1 - John Doe"`
-
-8. **Push branch** ke repository
-
-   ```bash
-   git push origin tugas/topik-pertemuan-nama
-   ```
-
-9. **Buat Pull Request** di GitHub:
+7. **Buat Pull Request**
 
    - Buka [github.com/UKM-IK/UKMIK-SC2025](https://github.com/UKM-IK/UKMIK-SC2025)
-   - Akan muncul banner **"Compare & pull request"** → klik
-   - Isi judul: `[TOPIK] Pertemuan N - Nama Anda`
-   - Isi deskripsi tugas Anda (opsional)
-   - Klik **"Create pull request"**
+   - Klik "Compare & pull request"
+   - Judul: `Submit [TOPIK] Pertemuan N - Nama Anda`
+   - Klik "Create pull request"
 
-10. **Tunggu review** dari mentor/admin
-    - Mentor akan review tugas Anda
-    - Jika ada revisi, lakukan perubahan dan push lagi ke branch yang sama
-    - Setelah approved, PR akan di-merge
+8. **Tunggu approval** dari mentor
 
 ### C. Setelah PR Di-merge
-
-Setelah PR Anda di-merge, kembali ke branch main:
 
 ```bash
 git checkout main
 git pull origin main
 ```
 
-Untuk tugas berikutnya, ulangi dari **Langkah B**.
+Untuk tugas berikutnya, ulangi dari **Langkah A**.
 
 ## ⚠️ Peraturan Pengumpulan
 
+- ✅ Repository tugas **WAJIB public**
 - ✅ Kumpulkan tugas sesuai deadline yang ditentukan
-- ✅ Gunakan nama folder yang jelas dan konsisten (NIM-NAMA)
+- ✅ Repository tugas harus memiliki **README.md** yang jelas (cara install, run, dan deskripsi)
 - ✅ Pastikan code Anda bersih dan terdokumentasi
-- ✅ **WAJIB** gunakan branch baru untuk setiap tugas (jangan langsung ke main)
-- ✅ Jangan mengubah atau menghapus tugas orang lain
+- ✅ **WAJIB** gunakan branch baru saat submit link (jangan langsung ke main)
+- ✅ Jangan mengubah atau menghapus entry orang lain di tabel
 - ✅ Sertakan komentar pada kode Anda
-- ✅ Test code Anda sebelum push
+- ✅ Test code Anda sebelum submit
 - ❌ Dilarang melakukan plagiarisme
 - ❌ Dilarang push langsung ke branch `main`
 
-## 💡 Tips & Troubleshooting
+## 💡 Tips
 
 ### Tips Pengumpulan:
 
-- 📌 Selalu `git pull origin main` sebelum mulai mengerjakan tugas baru
-- 📌 Gunakan branch terpisah untuk setiap tugas
+- 📌 Buat repository tugas dengan nama yang jelas dan deskriptif
+- 📌 Pastikan repository tugas Anda **public** agar mentor bisa review
+- 📌 Sertakan **README.md lengkap** di repository tugas (cara install, run, screenshot/demo)
 - 📌 Commit dengan pesan yang jelas dan deskriptif
-- 📌 Push sesering mungkin untuk backup
-- 📌 Jangan menunggu deadline untuk mengumpulkan
-
-### Troubleshooting:
-
-**❓ Tidak bisa push (Permission denied)**
-
-- Pastikan Anda sudah menjadi member organisasi UKM-IK
-- Cek apakah invitation sudah diterima
-
-**❓ Ada conflict saat pull/push**
-
-```bash
-# Simpan perubahan Anda sementara
-git stash
-
-# Pull perubahan terbaru
-git pull origin main
-
-# Kembalikan perubahan Anda
-git stash pop
-
-# Resolve conflict jika ada, lalu commit
-```
-
-**❓ Salah commit/push**
-
-```bash
-# Undo commit terakhir (tapi file tetap ada)
-git reset --soft HEAD~1
-
-# Atau undo commit dan buang perubahan
-git reset --hard HEAD~1
-```
-
-**❓ Lupa nama branch**
-
-```bash
-# Lihat semua branch
-git branch -a
-```
-
-**❓ Ingin ganti branch**
-
-```bash
-git checkout nama-branch
-```
+- 📌 Push ke repository tugas Anda sesering mungkin untuk backup
+- 📌 Submit link repository sebelum deadline
+- 📌 Selalu `git pull origin main` sebelum submit link tugas baru
 
 ## 📞 Kontak
 
@@ -238,10 +175,10 @@ Jika ada pertanyaan atau kendala, silakan hubungi:
 
 ## 📜 Lisensi
 
-Repository ini dikelola oleh UKM Ilmu Komputer untuk keperluan pembelajaran Study Club 2025.
+Repository ini dikelola oleh UKM Informatika & Komputer untuk keperluan pembelajaran Study Club 2025.
 
 ---
 
 **Happy Coding! 🚀💻**
 
-_UKM Ilmu Komputer - Study Club 2025_
+_UKM Informatika & Komputer - Study Club 2025_
